@@ -7,6 +7,8 @@ $if(sender-phone)$  sender-phone: "$sender-phone$",
 $endif$
 $if(sender-email)$  sender-email: "$sender-email$",
 $endif$
+$if(sender-email-display)$  sender-email-display: "$sender-email-display$",
+$endif$
 $if(annotations)$  annotations: "$annotations$",
 $endif$
 $if(recipient)$  recipient: [

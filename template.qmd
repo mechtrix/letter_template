@@ -1,0 +1,38 @@
+---
+format: 
+  letter-pro-typst: default
+sender-name: "Prof--dot-- Dr--dot-- Tim A--dot-- Weber"
+sender-address: "Badstr. 21, 93413 Cham"
+sender-phone: "+49 991 3615 9417"
+sender-email: "tim.weber--at--th-deg.de"
+annotations: "Gutachten Masterarbeit"
+recipient: |
+  PK TH Deggendorf, Campus Cham, NuW\
+  Badstraße 21\
+  93413 Cham
+date: "29. May 2026"
+subject: "Gutachten Masterarbeit"
+
+---
+
+Sehr geehrte Damen und Herren,
+
+hier kommt der Inhalt des Briefes.
+
+### Zwischenüberschrift
+
+sieht dann so aus
+
+#smallcaps[Hello]
+
+
+```{=typst}
+#v(0.2cm)
+#image("signature.png", width: 4cm)
+Prof. Dr. Tim A. Weber
+
+// #v(1fr)
+//*Anlagen:*
+//- Rechnung
+
+```
