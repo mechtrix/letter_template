@@ -1,4 +1,4 @@
-# letter_templaate
+# letter_template
 
 A letter template in typst for the use in quarto.
 
