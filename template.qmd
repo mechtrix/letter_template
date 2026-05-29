@@ -12,18 +12,76 @@ recipient: |
   93413 Cham
 date: "29. May 2026"
 subject: "Gutachten Masterarbeit"
-
+params:
+  student-name: "Max Mustermann"
+  matrikel: "12345678"
+  thesis-title: "Eine sehr lange Arbeit"
+  grade: "1.7"
 ---
 
-Sehr geehrte Damen und Herren,
+```{r}
+#| include: false
+student_name <- "Max Mustermann"
+matrikel     <- "12345678"
+thesis_title <- "Eine sehr sehr langer Titel der außerdem unglaublich technisch klingt und perfekt in dieses Template passt"
+grade        <- "1.7"
+```
 
-hier kommt der Inhalt des Briefes.
 
-### Zwischenüberschrift
+Sehr geehrte Kolleg::innen,
 
-sieht dann so aus
+hiermit übersende ich das Gutachten für `r student_name` (Matrikelnummer: `r matrikel`) mit dem Titel:  `r thesis_title`.
 
-#smallcaps[Hello]
+
+
+```{=typst}
+#underline[Problemstellung und Komplexität der Aufgabe]
+#v(0.3cm)
+```
+
+Hier kommt ein Statement über die Problemstellung und die Komplexität der Aufgabe.
+
+::: {.block fill="luma(230)" inset="8pt" radius="4pt"}
+Hier kommt ein zusammenfassendes Statement über die Problemstellung und die Komplexität der Aufgabe.
+
+Bewertung: 1,3
+:::
+
+
+```{=typst}
+#underline[Formales und Gliederung]
+#v(0.3cm)
+```
+
+Hier kommt ein Statement über das Formale und die Gliederung der Arbeit.
+
+::: {.block fill="luma(230)" inset="8pt" radius="4pt"}
+Hier kommt eine Zusammenfassung zum Formalen und der Gliederung der Arbeit
+
+Bewertung: 1,3
+:::
+
+```{=typst}
+#underline[Inhalt und Gesamteindruck]
+#v(0.3cm)
+```
+
+Hier kommt ein Statement über den Inhalt und den Gesamteindruck der Arbeit.
+
+::: {.block fill="luma(230)" inset="8pt" radius="4pt"}
+Hier kommt eine Zusammenfassung zum Inhalt und Gesamteindruck der Arbeit
+
+Bewertung: 1,3
+:::
+
+```{=typst}
+#align(center)[
+  #block(fill: luma(230), inset: 8pt, radius: 4pt, stroke: 1pt)[
+    #strong[Gesamtnote: `r grade`]
+  ]
+]
+```
+
 
 
 ```{=typst}
